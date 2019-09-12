@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
+
 <body>
-    
-<!-- HEADER -->
+
+    <!-- HEADER -->
     <header class="header">
         <div class="header__content">
             <div class="header__logo"></div>
             <div class="header__title">
-                <p class="header__text">Appointment</p>
+                <h1 class="header__text">Appointment</h1>
             </div>
             <div class="header__button">
                 <button class="button">create +</button>
@@ -24,9 +26,9 @@
         </div>
     </header>
 
-<!-- SECTION -->
+    <!-- SECTION -->
     <section class="section">
-       
+
         <div class="section__content">
             <div class="section-image"></div>
             <div class="section__store">
@@ -34,24 +36,39 @@
         </div>
         <!-- Modal window -->
         <div class="modal">
-              
-            <div class="modal__content">
-                   
-                <div class="modal__close"></div>
 
-                <select name="doctor"  class="modal__select">
-                            <option id="cardiologist" value="cardiologist">CARDIOLOGIST</option>
-                            <option value="dentist">DENTIST</option>
-                            <option value="therapeutist">THERAPEUTIST</option>   
-                </select>
-                
-                    <div class="modal__cardiologist">
-                        <input type="text" size="40">
-                        <input type="text" size="40">
-                        <input type="text" size="40">
+            <div class="modal__content">
+
+                <div class="modal__close"></div>
+                <form action="#">
+                    <select name="doctor" class="modal__select">
+                        <!-- <option value="">COOSE A DOCTOR</option> -->
+                        <option value="cardiologist">CARDIOLOGIST</option>
+                        <option value="dentist">DENTIST</option>
+                        <option value="therapeutist">THERAPEUTIST</option>
+                    </select>
+
+                    <div class="modal__input">
+                        <input name="cardiologist dentist therapeutist" type="text" size="40"
+                            placeholder="Visit purpose" valid required>
+                        <input name="cardiologist" type="text" size="40" placeholder="Custom blood preasure" required>
+                        <input name="cardiologist" type="text" size="40" placeholder="Body weight" required>
+                        <input name="cardiologist" type="text" size="40" placeholder="Cardio diseases" required>
+                        <input name="cardiologist therapeutist" type="number" size="40" placeholder="Your age" required>
+                        <input name="cardiologist therapeutist dentist" type="text" size="40" placeholder="Full name"
+                            required>
+
+                        <input name="dentist" class="hide" type="text" size="40" placeholder="Last visist date"
+                            required>
+
+                        <textarea class="modal__textaria" type="text" maxlength="400"
+                            placeholder="Write comment.."></textarea>
                     </div>
-                
-                  
+
+                    <button class="modal__submit">Submit</button>
+
+                </form>
+
 
                 <button class="modal__submit button hide">Create Card</button>
             </div>
@@ -66,4 +83,5 @@
 
 
 </body>
+
 </html>
