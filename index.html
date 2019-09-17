@@ -48,29 +48,28 @@
                         <option value="therapeutist">THERAPEUTIST</option>
                     </select>
 
-                    <div class="modal__input">
-                        <input name="cardiologist dentist therapeutist" type="text" size="40"
-                            placeholder="Visit purpose" valid required>
-                        <input name="cardiologist" type="text" size="40" placeholder="Custom blood preasure" required>
-                        <input name="cardiologist" type="text" size="40" placeholder="Body weight" required>
-                        <input name="cardiologist" type="text" size="40" placeholder="Cardio diseases" required>
-                        <input name="cardiologist therapeutist" type="number" size="40" placeholder="Your age" required>
-                        <input name="cardiologist therapeutist dentist" type="text" size="40" placeholder="Full name"
-                            required>
-
-                        <input name="dentist" class="hide" type="text" size="40" placeholder="Last visist date"
-                            required>
+                    <div class="modal__input" id="modal__input">
+                        <input class="purpose" name="cardiologist dentist therapeutist" type="text" size="40"
+                            placeholder="Visit purpose" value="Head ache">
+                        <!-- <input name="cardiologist" type="text" size="40" placeholder="Common blood preasure" value="">
+                        <input name="cardiologist" type="text" size="40" placeholder="Body weight" value="">
+                        <input name="cardiologist" type="text" size="40" placeholder="Cardio diseases" value=""> -->
+                        <input class="age" name="cardiologist therapeutist" type="number" size="40" value="42">
+                        <input class="name" name="cardiologist therapeutist dentist" type="text" size="40"
+                            placeholder="Full name" value="Mike Tyson">
+                        <input class="lastVisitDate" name="dentist" class="hide" type="text" size="40"
+                            placeholder="Last visist date" value="">
 
                         <textarea class="modal__textaria" type="text" maxlength="400"
                             placeholder="Write comment.."></textarea>
                     </div>
 
-                    <button class="modal__submit">Submit</button>
+                    <button type="button" class="modal__submit">Submit</button>
 
                 </form>
 
 
-                <button class="modal__submit button hide">Create Card</button>
+                <!-- <button class="modal__submit button hide">Create Card</button> -->
             </div>
         </div>
 
