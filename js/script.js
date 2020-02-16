@@ -79,17 +79,28 @@ window.onload = () => { //START
     // Modal doctor's select
     document.getElementsByClassName('modal__select')[0].addEventListener('change', function () {
         let colection = document.getElementsByTagName('input');
+        console.log(colection)
         let value = document.getElementsByClassName('modal__select')[0].value;
+        let colect =[...document.getElementsByTagName('input') ];// make a classic Array
+
+        // let args = [].slice.call(colection);// make a classic Array
+        // [].slice.call( document.getElementsByTagName('input') ).forEach( (elem) => {
+        //     elem.value = '';
+        // });
+        [].slice.call( document.getElementsByTagName('input') ).map( (elem) => {
+            elem.value = '';
+            elem.name.includes(value) ? elem.classList.remove('hide') : elem.classList.add('hide') ;
+        })
+
+        // for (let elem of colection) {
+        //     // elem.classList.add('hide'); //hide evere input
+        //     elem.value = ''; //hide evere input
 
 
-        for (let elem of colection) {
-            elem.classList.add('hide'); //hide evere input
-
-
-            if (elem.name.includes(value)) { //show evere input
-                elem.classList.remove('hide');
-            }
-        }
+        //     if (elem.name.includes(value)) { //show evere input
+        //         elem.classList.remove('hide');
+        //     }
+        // }
     })
 
 
